@@ -261,8 +261,8 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-margin-bottom:             10px; //@line-height-computed;
+@navbar-border-radius:             0; //@border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
@@ -293,12 +293,12 @@
 // Inverted navbar
 //
 // Reset inverted navbar basics
-@navbar-inverse-color:                      #ddd;
+@navbar-inverse-color:                      #dddddd;
 @navbar-inverse-bg:                         @brand-primary;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 #ddd;
+@navbar-inverse-link-color:                 #fff;
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
@@ -320,7 +320,7 @@
 // Navs
 // -------------------------
 
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          3px 30px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;
