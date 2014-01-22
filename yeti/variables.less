@@ -40,10 +40,11 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Gudea", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+@font-family-header:      "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @font-size-base:          15px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
@@ -59,8 +60,8 @@
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
-@headings-font-family:    @font-family-base;
-@headings-font-weight:    400;
+@headings-font-family:    @font-family-header;
+@headings-font-weight:    300;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -118,7 +119,7 @@
 // Buttons
 // -------------------------
 
-@btn-font-weight:                normal;
+@btn-font-weight:                300;
 
 @btn-default-color:              @gray-dark;
 @btn-default-bg:                 #e7e7e7;
