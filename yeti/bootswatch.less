@@ -2,14 +2,22 @@
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+//@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+//@import url("//fonts.googleapis.com/css?family=Cabin:400,600");
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300&subset=latin,latin-ext);
+//@import url("//fonts.googleapis.com/css?family=Gudea:400,700&subset=latin,latin-ext");
+@import url("//fonts.googleapis.com/css?family=Nunito:400,300");
 
 // Navbar =====================================================================
 
 .navbar {
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: @padding-base-vertical;
 	border: none;
-	font-size: 13px;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
 
 	.navbar-toggle:hover .icon-bar {
 		background-color: #b3b3b3;
@@ -76,10 +84,16 @@
 	}
 }
 
+.subnavbar {
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-bottom: @navbar-padding-vertical;
+}
+
 // Buttons ====================================================================
 
 .btn {
-	padding: 14px 28px;
+	padding: 8px 20px;
 
 	&-lg {
 		padding: 16px 32px;
@@ -193,6 +207,15 @@
 	}
 }
 
+
+.navbar-btn {
+	padding: 6px 20px;
+}
+
+.btn-line {
+	padding-top: @padding-large-vertical;
+}
+
 // Typography =================================================================
 
 .lead {
@@ -200,7 +223,7 @@
 }
 
 cite {
-	font-style: italic;
+	font-style: normal;
 }
 
 blockquote {
@@ -217,6 +240,20 @@ blockquote {
 	}
 }
 
+.page-header {
+	margin: 0 0 @padding-large-vertical 0;
+	border: none;
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-weight: 300;
+	}
+}
+
+img.pull-right {
+	padding: 0 0 @padding-large-vertical @padding-large-horizontal;
+}
+
 // Tables =====================================================================
 
 table {
@@ -228,7 +265,14 @@ table {
 input,
 .form-control {
 	padding: 7px;
-	font-size: @font-size-small;
+	font-size: @font-size-base;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+input[type=search] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 }
 
 label,
@@ -243,8 +287,8 @@ label,
 .form-group .btn,
 .input-group-addon,
 .input-group-btn .btn {
-	padding: 8px 14px;
-	font-size: @font-size-small;
+	padding: 6px 14px;
+	font-size: @font-size-base;
 }
 
 // Navs =======================================================================
@@ -276,14 +320,16 @@ label,
 .breadcrumb {
 	border: 1px solid @table-border-color;
 	border-radius: 3px;
-	font-size: 10px;
-	font-weight: 300;
+	font-size: 11px;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
 .pagination {
+	margin: 0;
+	padding: 0;
 	font-size: @font-size-small;
-	font-weight: 300;
+	font-weight: 400;
 	color: @gray-light;
 
 	> li {
@@ -322,20 +368,20 @@ label,
 
 .pager {
 	font-size: @font-size-small;
-	font-weight: 300;
+	font-weight: 400;
 	color: @gray-light;
 }
 
 .list-group {
 	font-size: @font-size-small;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 // Indicators =================================================================
 
 .alert {
 	font-size: @font-size-small;
-	font-weight: 300;
+	font-weight: 400;
 
 	a,
 	.alert-link {
@@ -358,7 +404,7 @@ label,
 }
 
 .badge {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 // Progress bars ==============================================================
@@ -396,5 +442,29 @@ label,
 .popover {
 	color: #fff;
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 400;
 }
+
+header {
+	padding: 10px 0 10px 20px;
+}
+
+footer {
+	margin: 90px 0 40px 0;
+}
+
+
+.container {
+    background-color: #fff;
+}
+
+.tab-pane {
+	padding-top: @padding-large-vertical;
+}
+
+// Responsive =================================================================
+span.hidden-sm,
+span.hidden-xs {
+	display: inline !important;
+}
+

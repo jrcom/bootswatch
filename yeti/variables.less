@@ -18,8 +18,8 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #008cba;
-@brand-success:         #43ac6a;
+@brand-primary:         #00aac6;
+@brand-success:         #bf301a;
 @brand-warning:         #E99002;
 @brand-danger:          #F04124;
 @brand-info:            #5bc0de;
@@ -27,7 +27,8 @@
 // Scaffolding
 // -------------------------
 
-@body-bg:               #fff;
+@body-bg:               #f4f4f4;
+@container-bg:          #fff;
 @text-color:            @gray-darker;
 
 // Links
@@ -39,17 +40,17 @@
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Gudea", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          15px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
-@font-size-small:         12px;
+@font-size-small:         14px;
 
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h1:            floor(@font-size-base * 2.1); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.0); // ~30px
 @font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
 @font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
 @font-size-h5:            @font-size-base;
@@ -59,7 +60,7 @@
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
-@headings-font-weight:    300;
+@headings-font-weight:    400;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -333,7 +334,7 @@
 
 @nav-tabs-link-hover-border-color:          @gray-lighter;
 
-@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-bg:             @container-bg;
 @nav-tabs-active-link-hover-color:          @gray;
 @nav-tabs-active-link-hover-border-color:   #ddd;
 
