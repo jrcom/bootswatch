@@ -85,6 +85,32 @@ body {
 	}
 }
 
+// auto width nav
+.navbar-nav.navbar-nav-rnyk {
+
+	@media (min-width: @grid-float-breakpoint) {
+		float: none;
+		margin: 0;
+		display: table-row;
+		text-align: center;
+		width: 100%;
+
+		> li {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			display: table-cell;
+			width: 25%;
+			background-width: auto auto;
+			border-right: 1px solid #fff;
+		}	
+		
+		> li:last-of-type {
+			border-right: none;
+		}	
+	}
+}
+
 .subnavbar {
 	margin-left: -15px;
 	margin-right: -15px;
