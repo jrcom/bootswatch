@@ -7979,6 +7979,31 @@ label,
   text-transform: uppercase;
 }
 
+.dropdown-rnyk {
+  width: 100%;
+}
+
+.dropdown-rnyk-menu {
+  top: -6px;
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+.dropdown-rnyk-menu ul {
+  list-style: none;
+}
+
+.dropdown-rnyk-menu li {
+  margin: 5px 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdown-rnyk-menu li img {
+  padding-right: 5px;
+}
+
 .popover {
   font-size: 12px;
   font-weight: 300;

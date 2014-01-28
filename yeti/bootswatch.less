@@ -549,6 +549,30 @@ label,
 	}
 }
 
+.dropdown-rnyk {
+	width: 100%;
+	&-menu {
+		padding: @padding-small-vertical 0 @padding-small-vertical 0;
+		width: 100%;
+		top: -@padding-base-vertical;
+		
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin: @padding-small-vertical 0 @padding-small-vertical 0;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+
+			img {
+				padding-right: @padding-xs-horizontal;
+			}
+		}
+	}
+}
+
 .popover {
 	color: #fff;
 	font-size: 12px;
