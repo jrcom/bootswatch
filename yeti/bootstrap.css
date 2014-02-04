@@ -7511,6 +7511,10 @@ body {
   font-weight: 300;
 }
 
+body .container {
+  background-color: #fff;
+}
+
 .navbar {
   margin-right: -15px;
   margin-bottom: 6px;
@@ -7518,8 +7522,11 @@ body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
-  text-transform: uppercase;
   border: none;
+}
+
+.navbar .container {
+  background-color: #333333;
 }
 
 .navbar .navbar-toggle:hover .icon-bar {
@@ -7575,6 +7582,10 @@ body {
 .navbar-inverse .dropdown-menu > .active > a,
 .navbar-inverse .dropdown-menu > .active > a:hover {
   background-color: #007e93;
+}
+
+.navbar-nav.navbar-nav-rnyk {
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -8016,10 +8027,6 @@ header {
 
 footer {
   margin: 90px 0 40px 0;
-}
-
-.container {
-  background-color: #fff;
 }
 
 .tab-pane {

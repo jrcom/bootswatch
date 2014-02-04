@@ -6,6 +6,9 @@
 
 body {
 	font-weight: 300;
+	.container {
+		background-color: #fff;
+	}
 }
 
 // Navbar =====================================================================
@@ -18,7 +21,10 @@ body {
 	font-family: @font-family-header;
 	font-size: 18px;
 	font-weight: 300;
-	text-transform: uppercase;
+
+	.container {
+		background-color: @navbar-default-bg;
+	}
 
 	.navbar-toggle:hover .icon-bar {
 		background-color: #b3b3b3;
@@ -87,6 +93,7 @@ body {
 
 // auto width nav
 .navbar-nav.navbar-nav-rnyk {
+	text-transform: uppercase;
 
 	@media (min-width: @grid-float-breakpoint) {
 		float: none;
@@ -585,11 +592,6 @@ header {
 
 footer {
 	margin: 90px 0 40px 0;
-}
-
-
-.container {
-    background-color: #fff;
 }
 
 .tab-pane {
