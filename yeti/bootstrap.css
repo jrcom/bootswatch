@@ -8038,6 +8038,14 @@ span.hidden-xs {
   display: inline !important;
 }
 
+.product h4 {
+  margin-bottom: 2px;
+}
+
+.product-images ul {
+  margin-top: 20px;
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
